@@ -23,7 +23,7 @@
 }
 @media (max-width: 720px) {
   .todo-main {
-    height: 100%;
+    height: 80%;
     width: 100%;
     background-color: aliceblue;
     display: flex;
