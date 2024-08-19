@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 720.1px) {
+  .todo-main {
+    height: 70%;
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .todo-main {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+}
+.header {
+  padding: 10px 0px 10px 15px;
+}
+.todo-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+}
+
+.todo-input input {
+  flex: 1;
+  height: 25px;
+  border: solid 1px grey 2;
+  outline: none;
+  padding-left: 10px;
+}
+
+.todo-input button {
+  background-color: rgb(128, 84, 178);
+  border: none;
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo-input button:hover .tooltip {
+  opacity: 1;
+}
+
+.todo-input button img {
+  width: 26px;
+}
+
+.todo-input .tooltip {
+  position: absolute;
+  right: -18px;
+  bottom: -28px;
+  z-index: 2;
+  background-color: rgb(128, 84, 178);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#display {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+#todo {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+  position: relative;
+}
+
+#todo p {
+  font-weight: bold;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+#todo button {
+  background-color: rgb(168, 8, 8);
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+#todo button .tooltip {
+  position: absolute;
+  right: -18px;
+  bottom: -28px;
+  z-index: 2;
+  background-color: rgb(168, 8, 8);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#todo button:hover .tooltip {
+  opacity: 1;
+}
+
+#todo button img {
+  width: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  position: relative;
+}
+
+.footer p {
+  font-weight: bolder;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.footer button {
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: rgb(128, 84, 178);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  opacity: 0.7;
+}
+
+.footer button:active {
+  opacity: 0.5;
+}
