@@ -30,7 +30,10 @@
     flex-direction: column;
     border-radius: 10px;
   }
-}
+  .todo-input .tooltip {
+    display: none;
+  }
+  }
 .header {
   padding: 10px 0px 10px 15px;
 }
